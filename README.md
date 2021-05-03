@@ -16,9 +16,9 @@ Para cumprir os objetivos do desafio você deve:
 2. Escrever automações para cada caso de teste.
 3. Report de bugs ou comportamento não esperado, se houver.
 
-Para escrever as automações utilize algum framework ou biblioteca JavaScript como Cypress. Não crie um repositório separado para os testes, faça numa pasta separada dentro deste projeto.
+Para escrever as automações utilize algum framework ou biblioteca JavaScript como Cypress. Não crie um repositório separado para os testes, faça numa pasta separada dentro deste projeto. Para cada arquivo de cenários utilize um padrão como `cenarios_login.md`.
 
-Caso encontre alguma incosistência ou comportamento não esperado, por favor coloque o report dos mesmos dentro do seu projeto como `bug_login.md`.
+Caso encontre alguma incosistência ou comportamento não esperado, por favor coloque o report dos mesmos dentro do seu projeto como `bug_login.md`. 
 
 Ao finalizar, envie o link do seu repositório para diogo@t10.digital.
 
