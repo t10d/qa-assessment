@@ -20,9 +20,7 @@ export default function ForgotPassword() {
   const submitAction = ({ email }: FormInputs) => {
     api
       .post('/forgot-password', { email })
-      .then(({ data: { msg } }: AxiosResponse<{ msg: string }>) =>
-        alert(msg)
-      )
+      .then(({ data: { msg } }: AxiosResponse<{ msg: string }>) => alert(msg))
       .catch((error: AxiosError) => {
         if (error?.response?.status === 404) {
           setErrorSubmitMessage('User not found');
