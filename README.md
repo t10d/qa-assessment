@@ -20,6 +20,8 @@ Para escrever as automações utilize algum framework ou biblioteca JavaScript c
 
 Caso encontre alguma incosistência ou comportamento não esperado, por favor coloque o report dos mesmos dentro do seu projeto como `bug_login.md`.
 
+Ao finalizar, envie o link do seu repositório para diogo@t10.digital.
+
 #### Observações
 
 Utilize o usuário abaixo para realizar seus testes:
