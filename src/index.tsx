@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react';
 import { AuthProvider } from './context/AuthContext';
 import { makeServer } from './server';
+import 'react-toastify/dist/ReactToastify.css';
 
 if (process.env.NODE_ENV === 'development') {
   makeServer({ environment: 'development' });

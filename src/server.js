@@ -67,7 +67,7 @@ export function makeServer({ environment = 'test' } = {}) {
           (item) => item.username === request.params.username
         );
         if (user.models.length) {
-          const { password } = request.requestBody;
+          const { password } = JSON.parse(request.requestBody);
           user.update({ password });
           return { msg: 'Password updated.' };
         }

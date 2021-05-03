@@ -5,6 +5,7 @@ import { AxiosError, AxiosResponse } from 'axios';
 import * as React from 'react';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router';
+import { toast, ToastContainer } from 'react-toastify';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
 import api from '../../services/api';
@@ -28,9 +29,7 @@ export default function ResetPassword() {
     const { password } = payload;
     api
       .post(`/reset-password/${id}`, { password })
-      .then(({ data: { msg } }: AxiosResponse<{ msg: string }>) =>
-        window.alert(msg)
-      )
+      .then(({ data: { msg } }: AxiosResponse<{ msg: string }>) => toast(msg))
       .catch((error: AxiosError) => {
         if (error?.response?.status === 404) {
           setErrorSubmitMessage('User not found');
@@ -56,6 +55,7 @@ export default function ResetPassword() {
       justifyContent="center"
       mx="4"
     >
+      <ToastContainer position="top-right" autoClose={1500} />
       <Flex
         data-testid="reset-password"
         direction="column"
