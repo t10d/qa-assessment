@@ -31,8 +31,6 @@ Utilize o usuário abaixo para realizar seus testes:
 }
 ```
 
-Para o caso 3 (`/reset-password`), considere apenas a mensagem de sucesso como satisfatório para seu teste. Nós não estamos utilizando um banco de dados de verdade, então a senha do usuário não será resetada de fato. Portanto, não precisa testar tentando fazer o login novamente com a nova senha.
-
 ### Rodando o projeto
 
 Para rodar o projeto instale as dependências com:
