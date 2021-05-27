@@ -8,4 +8,4 @@ My take on T10 latest QA challenge.
 
 | ID | Name | Automation Status | CI/CD |
 |-|-|-|-|
-|CT-1|Should show the message Insert a valid email address|Done|❌|
+|CT-1|Should show the message "Insert a valid email address"|Done|❌|
