@@ -58,6 +58,7 @@
     "@storybook/react": "^6.2.7",
     "@types/react-router-dom": "^5.1.7",
     "@typescript-eslint/parser": "^4.19.0",
+    "cypress": "^7.4.0",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-cypress": "^2.11.2",
