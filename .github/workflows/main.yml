@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Cypress run
-        uses: cypress-io/github-action@v2.2.7
+        uses: cypress-io/github-action@v2
         with:
           build: yarn build
           start: yarn start
