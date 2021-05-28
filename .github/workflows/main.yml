@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   cypress-run:
-    runs-on: ubuntu-16.04
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
       - uses: borales/actions-yarn@v2.0.0
@@ -15,5 +15,6 @@ jobs:
           cmd: build # will run `yarn build` command
       - uses: borales/actions-yarn@v2.0.0
       - name: Cypress run
-        run: npx cypress run
+      uses: cypress-io/github-action@v2.2.7
+
 
