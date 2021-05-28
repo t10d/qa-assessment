@@ -7,13 +7,14 @@ jobs:
     runs-on: ubuntu-16.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
-      - name: Dependencies
-        run: yarn install
-      - name: Build project
-        run: yarn build
+      - uses: actions/checkout@v2
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install # will run `yarn install` command
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: build # will run `yarn build` command
+      - uses: borales/actions-yarn@v2.0.0
       - name: Cypress run
         run: npx cypress run
 
