@@ -6,7 +6,6 @@ jobs:
   cypress-run:
     runs-on: ubuntu-16.04
     steps:
-      - name: Checkout
       - uses: actions/checkout@v2
       - uses: borales/actions-yarn@v2.0.0
         with:
