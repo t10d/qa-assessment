@@ -15,6 +15,6 @@ jobs:
           cmd: build # will run `yarn build` command
       - uses: borales/actions-yarn@v2.0.0
       - name: Cypress run
-      uses: cypress-io/github-action@v2.2.7
+        uses: cypress-io/github-action@v2.2.7
 
 
