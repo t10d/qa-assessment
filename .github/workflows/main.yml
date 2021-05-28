@@ -10,6 +10,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2.2.7
         with:
-          build: yarn start
+          build: yarn build
+          start: yarn start
 
 
