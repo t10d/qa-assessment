@@ -11,8 +11,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
             build: yarn build
-            start: yarn global add serve
-            run: serve -s build
+            start: yarn global add serve && serve -s build
        
 
 
