@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-            build: yarn build
-            start: yarn start
       - name: Cypress run
         uses: cypress-io/github-action@v2
+        with:
+            build: npm run build
+            start: yarn start
 
 
